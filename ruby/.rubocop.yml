@@ -55,3 +55,6 @@ Style/BlockComments:
 
 Rails/FindEach:
   AutoCorrect: false
+
+Style/AndOr:
+  Enabled: false
