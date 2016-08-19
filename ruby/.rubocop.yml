@@ -58,3 +58,6 @@ Rails/FindEach:
 
 Style/AndOr:
   Enabled: false
+
+Style/Not:
+  Enabled: false
