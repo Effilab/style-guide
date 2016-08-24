@@ -1,5 +1,6 @@
 AllCops:
   TargetRubyVersion: 2.3
+  DisplayCopNames: true
   Exclude:
     - '**/db/**/*'
     - '**/marx/**/*'
@@ -60,4 +61,7 @@ Style/AndOr:
   Enabled: false
 
 Style/Not:
+  Enabled: false
+
+Style/EmptyCaseCondition:
   Enabled: false
