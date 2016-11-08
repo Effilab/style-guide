@@ -1,0 +1,224 @@
+Style/IndentationWidth:
+  Enabled: true
+  # Number of spaces for each indentation level
+  Width: 2
+
+Style/AccessModifierIndentation:
+  Enabled: true
+  EnforcedStyle: indent
+  # By default, the indentation width from Style/IndentationWidth is used
+  # But it can be overridden by setting this parameter
+  IndentationWidth: ~
+
+Style/AccessorMethodName:
+  Enabled: true
+
+Style/Alias:
+  Enabled: true
+  EnforcedStyle: prefer_alias_method
+
+Style/AlignArray:
+  # needs autocorrection
+  Enabled: true
+
+Style/AlignHash:
+  # needs autocorrection
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+  EnforcedLastArgumentHashStyle: always_inspect
+
+Style/AlignParameters:
+  Enabled: true
+  EnforcedStyle: with_first_parameter
+
+Style/AndOr:
+  EnforcedStyle: always
+
+Style/AnnotationComment:
+  Enabled: true
+  Keywords:
+    - TODO
+    - FIXME
+    - OPTIMIZE
+    - HACK
+
+Style/ArrayJoin:
+  Enabled: true
+
+Style/AsciiComments:
+  Enabled: true
+
+Style/AsciiIdentifiers:
+  Enabled: true
+
+Style/Attr:
+  Enabled: true
+
+Style/BeginBlock:
+  Enabled: true
+
+Style/BlockComments:
+  Enabled: true
+
+Style/BlockNesting:
+  Enabled: true
+
+Style/Blocks:
+  Enabled: true
+
+Style/BracesAroundHashParameters:
+  Enabled: true
+  EnforcedStyle: context_dependent
+
+Style/CaseEquality:
+  Enabled: false
+
+Style/CaseIndentation:
+  Enabled: true
+  IndentWhenRelativeTo: case
+  IndentOneStep: false
+
+Style/CharacterLiteral:
+  Enabled: true
+
+Style/ClassAndModuleCamelCase:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: nested
+
+Style/ClassLength:
+  Enabled: true
+  CountComments: false
+  Max: 100
+
+Style/ClassMethods:
+  Enabled: true
+
+Style/ClassVars:
+  Enabled: true
+
+
+Style/CollectionMethods:
+  Enabled: true
+ # Mapping from undesired method to desired_method
+ # e.g. to use `detect` over `find`:
+ #
+ # CollectionMethods:
+ #   PreferredMethods:
+ #     find: detect
+  PreferredMethods:
+    collect: 'map'
+    collect!: 'map!'
+    inject: 'reduce'
+    detect: 'find'
+    find_all: 'select'
+
+Style/ColonMethodCall:
+  Enabled: true
+
+Style/ConstantName:
+  Enabled: true
+
+Style/CyclomaticComplexity:
+  Enabled: true
+
+Style/DefWithParentheses:
+  Enabled: true
+
+Style/DeprecatedHashMethods:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: true
+
+Style/DotPosition:
+  Enabled: true
+  EnforcedStyle: leading
+
+Style/DoubleNegation:
+  Enabled: true
+
+Style/EmptyLineBetweenDefs:
+  Enabled: true
+  # If true, this parameter means that single line method definitions don't
+  # need an empty line between them.
+  AllowAdjacentOneLineDefs: false
+
+Style/EmptyLines:
+  # 2 lines offset
+  Enabled: true
+
+Style/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+Style/EmptyLinesAroundBody:
+  Enabled: false
+
+Style/EmptyLiteral:
+  Enabled: true
+
+Style/Encoding:
+  Enabled: false
+
+Style/EndBlock:
+  Enabled: true
+
+Style/EndOfLine:
+  Enabled: true
+
+Style/EvenOdd:
+  Enabled: true
+
+Style/FileName:
+  Enabled: true
+  # File names listed in AllCops:Include are excluded by default. Add extra
+  # excludes here.
+  Exclude: []
+  # When true, requires that each source file should define a class or module
+  # with a name which matches the file name (converted to ... case).
+  # It further expects it to be nested inside modules which match the names
+  # of subdirectories in its path.
+  ExpectMatchingDefinition: false
+  # If non-nil, expect all source file names to match the following regex.
+  # Only the file name itself is matched, not the entire file path.
+  # Use anchors as necessary if you want to match the entire name rather than
+  # just a part of it.
+  Regex: ~
+  # With `IgnoreExecutableScripts` set to `true`, this cop does not
+  # report offending filenames for executable scripts (i.e. source
+  # files with a shebang in the first line).
+  IgnoreExecutableScripts: true
+
+Style/FinalNewline:
+  Enabled: true
+
+Style/FlipFlop:
+  Enabled: true
+
+Style/For:
+  Enabled: true
+  EnforcedStyle: each
+
+Style/FormatString:
+  Enabled: true
+  EnforcedStyle: format
+
+Style/GlobalVars:
+  Enabled: true
+  AllowedVariables: [$quiet, $shutdown]
+
+Style/GuardClause:
+  Enabled: true
+  MinBodyLength: 1
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedStyle: ruby19_no_mixed_keys
+  # Force hashes that have a symbol value to use hash rockets
+  UseHashRocketsWithSymbolValues: false
+  # Do not suggest { a?: 1 } over { :a? => 1 } in ruby19 style
+  PreferHashRocketsForNonAlnumEndingSymbols: false
+
+# http://www.rubydoc.info/github/bbatsov/rubocop/Rubocop/Cop/Style/HashSyntax
