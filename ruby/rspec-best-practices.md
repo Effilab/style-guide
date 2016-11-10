@@ -21,8 +21,11 @@
 	- Feature specs reside in the `spec/features` directory
 	- View specs reside in the `spec/views` directory
 	- Helper specs reside in the `spec/helpers` directory
+	- Pundit policy specs reside in the `spec/policies` directory
 	- Mailer specs reside in the `spec/mailers` directory
 	- Routing specs reside in the `spec/routing` directory
+	- Worker specs reside in the `spec/workers` directory
+	- Lib specs reside in the `spec/lib` directory
 - If changes need to made to an Adword account, check it for real using API
  	- For others HTTP services, WebMock can be use instead
 
@@ -45,4 +48,4 @@ This apply most specifically to feature test driven by Capybara
 - Labels must be succinct but clear to act as documentation
 - By default, Capybara waits the appearance of an element in the page for a given time (eg opening of modal)
 - In the case of an AJAX call without noticeable change to the view, we can still force to wait for jQuery running requests with the `wait_for_ajax` method (which checks JQuery internal variable)
-- Use `save_and_open_page` and `screenshot_and_open_image` for debugging capybara feature
+- Use `page.save_screenshot('screenshot.png', full: true)` for debugging capybara feature
