@@ -9,26 +9,25 @@
 - Filenames must end with `_spec.rb` to be taken into account automatically
 - Split unit tests that share a functional and group them into a single file for factoring and share behavior / initialization (a little longer to execute, but cleaner in code and easier in case of error)
 - Avoid testing too much behaviors in one test, split if needed
-- If sidekiq workers must be tested, run with inline mode block for immediate execution (global configuration is fake!)
+- If Sidekiq workers must be tested, run with inline mode block for immediate execution (global configuration is fake!)
 - Use the `expect` syntax
 - To initialize variable, prefer `let` over instance variables in a before block (lazy load, memoized)
 - Prefer request type of testing or feature instead of controller test (increasingly deprecated with rails 5)
 - Do not mix tests types in a single file
 - Specs are usually placed in a canonical directory structure that describes their purpose:
-  - Model specs reside in the `spec/models` directory
   - Controller specs reside in the `spec/controllers` directory
+	- Feature specs reside in the `spec/features` directory
+	- Helper specs reside in the `spec/helpers` directory
+	- Lib specs reside in the `spec/lib` directory
+	- Mailer specs reside in the `spec/mailers` directory
+	- Model specs reside in the `spec/models` directory
+	- Pundit policy specs reside in the `spec/policies` directory
   - Request specs reside in the `spec/requests` directory. The directory can also be named integration or api.
-  - Feature specs reside in the `spec/features` directory
+	- Routing specs reside in the `spec/routing` directory
   - View specs reside in the `spec/views` directory
-  - Helper specs reside in the `spec/helpers` directory
-  - Pundit policy specs reside in the `spec/policies` directory
-  - Mailer specs reside in the `spec/mailers` directory
-  - Routing specs reside in the `spec/routing` directory
   - Worker specs reside in the `spec/workers` directory
-  - Lib specs reside in the `spec/lib` directory
-- If changes need to made to an Adword account, check it for real using API
+- If changes need to made to an AdWords account, check it for real using API
 - For others HTTP services, WebMock can be use instead
-
 
 ## Feature tests
 
@@ -64,7 +63,7 @@ This apply most specifically to feature test driven by Capybara
 
 ### Support folder
 
-Files
+#### Files
 - `capybara.rb` Capybara and Poltergeist configuration
 - `database_cleaner.rb` DatabaseCleaner strategy and hooks configuration
 - `devise.rb` include Devise test helper for specific spec types
@@ -80,7 +79,7 @@ Files
 - `warden.rb` enable Warden test mode to stub login as user in specs
 - `web_mock.rb` WebMock configuration, allow net connection to external resources
 
-Directories
+#### Directories
 - `config` misc configuration files (eg. *.yml*)
 - `helpers` tests helpers
   - data initialization
