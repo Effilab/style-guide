@@ -269,11 +269,6 @@ Style/MethodCalledOnDoEndBlock:
 Style/MethodDefParentheses:
   Enabled: true
 
-Metrics/MethodLength:
-  Enabled: true
-  CountComments: false  # count full line comments?
-  Max: 20
-
 Style/MethodName:
   Enabled: true
   EnforcedStyle: snake_case

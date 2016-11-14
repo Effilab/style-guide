@@ -1,4 +1,10 @@
 inherit_from:
+  - .rubocop_bundler.yml
+  - .rubocop_lint.yml
+  - .rubocop_metrics.yml
+  - .rubocop_performance.yml
+  - .rubocop_rails.yml
+  - .rubocop_security.yml
   - .rubocop_style.yml
 
 AllCops:
@@ -8,6 +14,9 @@ AllCops:
     - '**/db/**/*'
     - '**/marx/**/*'
     - '**/vendor/**/*'
+
+# Disable all cops by default
+DisabledByDefault: false
 
 Rails:
   Enabled: true

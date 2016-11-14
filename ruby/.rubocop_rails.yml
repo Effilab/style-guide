@@ -1,0 +1,86 @@
+Rails/ActionFilter:
+  Enabled: true
+  EnforcedStyle: action
+  Include:
+   - app/controllers/**/*.rb
+
+Rails/Date:
+  Enabled: true
+  EnforcedStyle: strict
+
+Rails/Delegate:
+  Enabled: true
+
+Rails/DelegateAllowBlank:
+  Enabled: true
+
+Rails/DynamicFindBy:
+  Enabled: true
+
+Rails/Exit:
+  Enabled: true
+
+Rails/FindBy:
+  Enabled: true
+
+Rails/FindEach:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+
+Rails/HttpPositionalArguments:
+  Enabled: true
+
+Rails/NotNullColumn:
+  Enabled: false
+
+Rails/Output:
+  Enabled: true
+   Include:
+   - app/**/*.rb
+   - config/**/*.rb
+   - db/**/*.rb
+   - lib/**/*.rb
+   # blacklist ap ?
+
+Rails/OutputSafety:
+  Enabled: true
+
+Rails/PluralizationGrammar:
+  Enabled: true
+
+Rails/ReadWriteAttribute:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+
+Rails/RequestReferer:
+  Enabled: true
+  EnforcedStyle: referer
+
+Rails/SafeNavigation:
+  Enabled: true
+
+Rails/SaveBang:
+  Enabled: true
+
+Rails/ScopeArgs:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+
+Rails/TimeZone:
+  Eanbled: true
+  EnforcedStyle: strict
+
+Rails/UniqBeforePluck:
+  Enabled: true
+  EnforcedMode: conservative
+
+Rails/Validation:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb

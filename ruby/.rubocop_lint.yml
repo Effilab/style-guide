@@ -1,0 +1,190 @@
+Lint/AmbiguousOperator:
+  Enabled: true
+
+Lint/AmbiguousRegexpLiteral:
+  Enabled: true
+
+Lint/AssignmentInCondition:
+  Enabled: true
+  AllowSafeAssignment: false
+
+Lint/BlockAlignment:
+  Enabled: true
+  # The value `start_of_block` means that the `end` should be aligned with line
+  # where the `do` keyword appears.
+  # The value `start_of_line` means it should be aligned with the whole
+  # expression's starting line.
+  # The value `either` means both are allowed.
+  AlignWith: either
+
+Lint/CircularArgumentReference:
+  Enabled: true
+
+Lint/ConditionPosition:
+  Enabled: true
+
+Lint/Debugger:
+  Enabled: true
+
+Lint/DefEndAlignment:
+  Enabled: true
+  AlignWith: start_of_line
+
+Lint/DeprecatedClassMethods:
+  Enabled: true
+
+Lint/DuplicateCaseCondition:
+  Enabled: true
+
+Lint/DuplicateMethods:
+  Enabled: true
+
+Lint/DuplicatedKey:
+  Enabled: true
+
+Lint/EachWithObjectArgument:
+  Enabled: true
+
+Lint/ElseLayout:
+  Enabled: true
+
+Lint/EmptyEnsure:
+  Enabled: true
+
+Lint/EmptyExpression:
+  Enabled: true
+
+Lint/EmptyInterpolation:
+  Enabled: true
+
+Lint/EmptyWhen:
+  Enabled: true
+
+Lint/EndAlignment:
+  # The value `keyword` means that `end` should be aligned with the matching
+  # keyword (if, while, etc.).
+  # The value `variable` means that in assignments, `end` should be aligned
+  # with the start of the variable on the left hand side of `=`. In all other
+  # situations, `end` should still be aligned with the keyword.
+  # The value `start_of_line` means that `end` should be aligned with the start
+  # of the line which the matching keyword appears on.
+  AlignWith: keyword
+  AutoCorrect: false
+
+Lint/EndInMethod:
+  Enabled: true
+
+Lint/EnsureReturn:
+  Enabled: true
+
+Lint/Eval:
+  Enabled: true
+
+Lint/FloatOutOfRange:
+  Eanbled: true
+
+Lint/FormatParameterMismatch:
+  Eanbled: true
+
+Lint/HandleExceptions:
+  Enabled: true
+
+Lint/ImplicitStringConcatenation:
+  Enabled: true
+
+Lint/IneffectiveAccessModifier:
+  Enabled: true
+
+Lint/InheritException:
+  Enabled: true
+
+Lint/InvalidCharacterLiteral:
+  Enabled: false
+
+Lint/LiteralInCondition:
+  Enabled: true
+
+Lint/LiteralInInterpolation:
+  Enabled: true
+
+Lint/Loop:
+  Enabled: true
+
+Lint/NestedMethodDefinition:
+  Enabled: true
+
+Lint/NextWithoutAccumulator:
+  Enabled: true
+
+Lint/NonLocalExitFromIterator:
+  Enabled: false
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: true
+
+Lint/PercentStringArray:
+  Enabled: true
+
+Lint/PercentSymbolArray:
+  Enabled: true
+
+Lint/RandOne:
+  Enabled: true
+
+Lint/RequireParentheses:
+  Enabled: true
+
+Lint/RescueException:
+  Enabled: true
+
+Lint/ShadowedException:
+  Enabled: true
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+
+Lint/StringConversionInInterpolation:
+  Enabled: true
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: true
+
+Lint/UnifiedInteger:
+  Enabled: true
+
+Lint/UnneededDisable:
+  Enabled: true
+
+Lint/UnneededSplatExpansion:
+  Enabled: true
+
+Lint/UnreachableCode:
+  Enabled: true
+
+Lint/UnusedBlockArgument:
+  Enabled: true
+  IgnoreEmptyBlocks: true
+  AllowUnusedKeywordArguments: true
+
+Lint/UnusedMethodArgument:
+  Enabled: true
+  IgnoreEmptyMethods: true
+  AllowUnusedKeywordArguments: true
+
+Lint/UselessAccessModifier:
+  Enabled: true
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UselessComparison:
+  Enabled: true
+
+Lint/UselessElseWithoutRescue:
+  Enabled: true
+
+Lint/UselessSetterCall:
+  Enabled: true
+
+Lint/Void:
+  Enabled: true
