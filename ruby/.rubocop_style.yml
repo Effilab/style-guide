@@ -1,8 +1,3 @@
-Style/IndentationWidth:
-  Enabled: true
-  # Number of spaces for each indentation level
-  Width: 2
-
 Style/AccessModifierIndentation:
   Enabled: true
   EnforcedStyle: indent
@@ -32,15 +27,8 @@ Style/AlignParameters:
   EnforcedStyle: with_first_parameter
 
 Style/AndOr:
-  EnforcedStyle: always
-
-Style/AnnotationComment:
   Enabled: true
-  Keywords:
-    - TODO
-    - FIXME
-    - OPTIMIZE
-    - HACK
+  EnforcedStyle: always
 
 Style/ArrayJoin:
   Enabled: true
@@ -54,16 +42,23 @@ Style/AsciiIdentifiers:
 Style/Attr:
   Enabled: true
 
+Style/AutoResourceCleanup:
+  Enabled: false
+
+Style/BarePercentLiterals:
+  Enabled: false
+
 Style/BeginBlock:
   Enabled: true
 
 Style/BlockComments:
   Enabled: true
 
-Style/BlockNesting:
+Style/BlockDelimiters:
   Enabled: true
+  EnforcedStyle: braces_for_chaining
 
-Style/Blocks:
+Style/BlockEndNewline:
   Enabled: true
 
 Style/BracesAroundHashParameters:
@@ -88,10 +83,8 @@ Style/ClassAndModuleChildren:
   Enabled: true
   EnforcedStyle: nested
 
-Style/ClassLength:
-  Enabled: true
-  CountComments: false
-  Max: 100
+Style/ClassCheck:
+  Enabled: false
 
 Style/ClassMethods:
   Enabled: true
@@ -99,6 +92,8 @@ Style/ClassMethods:
 Style/ClassVars:
   Enabled: true
 
+Style/ClosingParenthesisIndentation:
+  Enabled: true
 
 Style/CollectionMethods:
   Enabled: true
@@ -118,20 +113,41 @@ Style/CollectionMethods:
 Style/ColonMethodCall:
   Enabled: true
 
+Style/CommandLiteral:
+  Enabled: true
+  EnforcedStyle: mixed
+  AllowInnerBackticks: true
+
+Style/CommentAnnotation:
+  Enabled: true
+   Keywords:
+    - TODO
+    - FIXME
+    - OPTIMIZE
+    - HACK
+    - REVIEW
+
+Style/CommentIndentation:
+  Enabled: true
+
+Style/ConditionalAssignment:
+  Enabled: false
+
 Style/ConstantName:
   Enabled: true
 
-Style/CyclomaticComplexity:
-  Enabled: true
+Style/Copyright:
+  Enabled: false
 
 Style/DefWithParentheses:
   Enabled: true
 
-Style/DeprecatedHashMethods:
-  Enabled: true
-
 Style/Documentation:
   Enabled: true
+
+Style/DocumentationMethod:
+  Enabled: true
+  RequireForNonPublicMethods: true
 
 Style/DotPosition:
   Enabled: true
@@ -139,6 +155,22 @@ Style/DotPosition:
 
 Style/DoubleNegation:
   Enabled: true
+
+Style/EachForSimpleLoop:
+  Enabled: true
+
+Style/EachWithObject:
+  Enabled: true
+
+Style/ElseAlignment:
+  Enabled: true
+
+Style/EmptyCaseCondition:
+  Enabled: true
+
+Style/EmptyElse:
+  Enabled: true
+  EnforcedStyle:	both
 
 Style/EmptyLineBetweenDefs:
   Enabled: true
@@ -153,11 +185,27 @@ Style/EmptyLines:
 Style/EmptyLinesAroundAccessModifier:
   Enabled: true
 
-Style/EmptyLinesAroundBody:
-  Enabled: false
+Style/EmptyLinesAroundBlockBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: true
+  EnforcedStyle: empty_lines
+
+Style/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: true
+  EnforcedStyle: no_empty_lines
 
 Style/EmptyLiteral:
   Enabled: true
+
+Style/EmptyMethod:
+  Enabled: true
+  EnforcedStyle: loose
 
 Style/Encoding:
   Enabled: false
@@ -170,6 +218,11 @@ Style/EndOfLine:
 
 Style/EvenOdd:
   Enabled: true
+
+Style/ExtraSpacing:
+  Enabled: true
+  AllowForAlignment: true
+  ForceEqualSignAlignment: false
 
 Style/FileName:
   Enabled: true
@@ -191,8 +244,20 @@ Style/FileName:
   # files with a shebang in the first line).
   IgnoreExecutableScripts: true
 
-Style/FinalNewline:
-  Enabled: true
+Style/FirstArrayElementLineBreak:
+  Enabled: false
+
+Style/FirstHashElementLineBreak:
+  Enabled: false
+
+Style/FirstMethodArgumentLineBreak:
+  Enabled: false
+
+Style/FirstMethodParameterLineBreak:
+  Enabled: false
+
+Style/FirstParameterIndentation:
+  Enabled: false
 
 Style/FlipFlop:
   Enabled: true
@@ -204,6 +269,10 @@ Style/For:
 Style/FormatString:
   Enabled: true
   EnforcedStyle: format
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
 
 Style/GlobalVars:
   Enabled: true
@@ -221,17 +290,32 @@ Style/HashSyntax:
   # Do not suggest { a?: 1 } over { :a? => 1 } in ruby19 style
   PreferHashRocketsForNonAlnumEndingSymbols: false
 
+Style/IdenticalConditionalBranches:
+  Enabled: true
+
+Style/IfInsideElse:
+  Enabled: true
+
 Style/IfUnlessModifier:
   Enabled: true
   MaxLineLength: 120
 
+Style/IfUnlessModifierOfIfUnless:
+  Enabled: true
+
 Style/IfWithSemicolon:
   Enabled: false
+
+Style/ImplicitRuntimeError:
+  Enabled: true
 
 Style/IndentArray:
   Enabled: true
   EnforcedStyle: special_inside_parentheses
   IndentationWidth: ~
+
+Style/IndentAssignment:
+  Enabled: false
 
 Style/IndentHash:
   Enabled: true
@@ -241,6 +325,20 @@ Style/IndentHash:
 Style/IndentationConsistency:
   Enabled: true
   EnforcedStyle: rails
+
+Style/IndentationWidth:
+  Enabled: true
+  # Number of spaces for each indentation level
+  Width: 2
+
+Style/InfiniteLoop:
+  Enabled: true
+
+Style/InitialIndentation:
+  Enabled: true
+
+Style/InlineComment:
+  Enabled: false
 
 Style/Lambda:
   Enabled: true
@@ -256,10 +354,6 @@ Style/LeadingCommentSpace:
 Style/LineEndConcatenation:
   Enabled: true
 
-Style/LineLength:
-  Enabled: true
-  MaxLineLength: 120
-
 Style/MethodCallParentheses:
   Enabled: true
 
@@ -269,30 +363,87 @@ Style/MethodCalledOnDoEndBlock:
 Style/MethodDefParentheses:
   Enabled: true
 
+Style/MethodMissing:
+  Enabled: true
+
 Style/MethodName:
   Enabled: true
   EnforcedStyle: snake_case
 
+Style/MissingElse:
+  Enabled: false
+
 Style/ModuleFunction:
   Enabled: true
 
+Style/MultilineArrayBraceLayout:
+  Enabled: true
+  EnforcedStyle: symmetrical
+
+Style/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+
 Style/MultilineBlockChain:
+  Enabled: true
+
+Style/MultilineBlockLayout:
+  Enabled: true
+
+Style/MultilineHashBraceLayout:
+  Enabled: true
+  EnforcedStyle: symmetrical
+
+Style/MultilineIfModifier:
   Enabled: true
 
 Style/MultilineIfThen:
   Enabled: true
 
+Style/MultilineMemoization:
+  Enabled: false
+
+Style/MultilineMethodCallBraceLayout:
+  Enabled: true
+  EnforcedStyle: symmetrical
+
+Style/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: aligned
+
+Style/MultilineMethodDefinitionBraceLayout:
+  Enabled: true
+  EnforcedStyle: symmetrical
+
+Style/MultilineOperationIndentation:
+  Enabled: true
+  EnforcedStyle: aligned
+
 Style/MultilineTernaryOperator:
+  Enabled: true
+
+Style/MutableConstant:
   Enabled: true
 
 Style/NegatedIf:
   Enabled: true
 
 Style/NegatedWhile:
-  Eanbled: true
+  Enabled: true
+
+Style/NestedModifier:
+  Enabled: true
+
+Style/NestedParenthesizedCalls:
+  Enabled: true
 
 Style/NestedTernaryOperator:
   Enabled: true
+
+Style/Next:
+  Enabled: true
+  EnforcedStyle: skip_modifier_ifs
+  MinBodyLength: 3
 
 Style/NilComparison:
   Enabled: true
@@ -304,20 +455,33 @@ Style/NonNilCheck:
 Style/Not:
   Enabled: true
 
+Style/NumericLiteralPrefix:
+  Enabled: true
+  EnforcedOctalStyle: zero_with_o
+
 Style/NumericLiterals:
   Enabled: true
   MinDigits: 5
+
+Style/NumericPredicate:
+  Enabled: true
+  EnforcedStyle: predicate
+  Exclude: spec/**/*
 
 Style/OneLineConditional:
   Enabled: true
 
 Style/OpMethod:
-  Eanbled: true
-
-Style/ParameterLists:
   Enabled: true
-  Max: 5
-  CountKeywordArgs: true
+
+Style/OptionHash:
+  Enabled: false
+
+Style/OptionalArguments:
+  Enabled: true
+
+Style/ParallelAssignment:
+  Enabled: true
 
 Style/ParenthesesAroundCondition:
   Enabled: true
@@ -337,11 +501,14 @@ Style/PercentLiteralDelimiters:
     '%W': ()
     '%x': ()
 
+Style/PercentQLiterals:
+  Enabled: true
+
 Style/PerlBackrefs:
   Enabled: true
 
 Style/PredicateName:
-  Eanbled: true
+  Enabled: true
   # Predicate name prefixes.
   NamePrefix:
     - is_
@@ -361,17 +528,27 @@ Style/PredicateName:
   Exclude:
     - 'spec/**/*'
 
+Style/PreferredHashMethods:
+  Enabled: true
+  EnforcedStyle: short
+
 Style/Proc:
-  Eanbled: true
+  Enabled: true
 
 Style/RaiseArgs:
-  Eanbled: true
+  Enabled: true
   EnforcedStyle: exploded
 
 Style/RedundantBegin:
   Enabled: true
 
 Style/RedundantException:
+  Enabled: true
+
+Style/RedundantFreeze:
+  Enabled: true
+
+Style/RedundantParentheses:
   Enabled: true
 
 Style/RedundantReturn:
@@ -384,8 +561,15 @@ Style/RedundantSelf:
 Style/RegexpLiteral:
   Enabled: false
 
+Style/RescueEnsureAlignment:
+  Enabled: true
+
 Style/RescueModifier:
   Enabled: true
+
+Style/SafeNavigation:
+  Enabled: true
+  ConvertCodeThatCanStartToReturnNil: false
 
 Style/SelfAssignment:
   Enabled: true
@@ -394,6 +578,9 @@ Style/Semicolon:
   Enabled: true
   # Allow ; to separate several expressions on the same line.
   AllowAsExpressionSeparator: false
+
+Style/Send:
+  Enabled: false
 
 Style/SignalException:
   Enabled: true
@@ -405,16 +592,10 @@ Style/SingleLineBlockParams:
 Style/SingleLineMethods:
   Enabled: false
 
-Style/SingleSpaceBeforeFirstArg:
-  Eanbled: true
-
 Style/SpaceAfterColon:
   Enabled: true
 
 Style/SpaceAfterComma:
-  Enabled: true
-
-Style/SpaceAfterControlKeyword:
   Enabled: true
 
 Style/SpaceAfterMethodName:
@@ -426,7 +607,13 @@ Style/SpaceAfterNot:
 Style/SpaceAfterSemicolon:
   Enabled: true
 
+Style/SpaceAroundBlockParameters:
+  Enabled: true
+
 Style/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+Style/SpaceAroundKeyword:
   Enabled: true
 
 Style/SpaceAroundOperators:
@@ -439,7 +626,24 @@ Style/SpaceAroundOperators:
 Style/SpaceBeforeBlockBraces:
   Enabled: true
 
-Style/SpaceBeforeModifierKeyword:
+Style/SpaceBeforeComma:
+  Enabled: true
+
+Style/SpaceBeforeComment:
+  Enabled: true
+
+Style/SpaceBeforeFirstArg:
+  Enabled: true
+  AllowForAlignment: true
+
+Style/SpaceBeforeSemicolon:
+  Enabled: true
+
+Style/SpaceInLambdaLiteral:
+  Enabled: true
+  EnforcedStyle: require_no_space
+
+Style/SpaceInsideArrayPercentLiteral:
   Enabled: true
 
 Style/SpaceInsideBlockBraces:
@@ -456,33 +660,136 @@ Style/SpaceInsideHashLiteralBraces:
 Style/SpaceInsideParens:
   Enabled: true
 
+Style/SpaceInsidePercentLiteralDelimiters:
+  Enabled: true
+
+Style/SpaceInsideRangeLiteral:
+  Enabled: true
+
+Style/SpaceInsideStringInterpolation:
+  Enabled: true
+  EnforcedStyle: no_space
+
 Style/SpecialGlobalVars:
   Enabled: true
   EnforcedStyle: use_english_names
 
+Style/StabbyLambdaParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses
+
 Style/StringLiterals:
+  Enabled: true
   EnforcedStyle: single_quotes
   ConsistentQuotesInMultiline: false
 
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringMethods:
+  Enabled: true
+  # Mapping from undesired method to desired_method
+  # e.g. to use `to_sym` over `intern`:
+  #
+  # StringMethods:
+  #   PreferredMethods:
+  #     intern: to_sym
+  PreferredMethods:
+    intern: to_sym
+
+Style/StructInheritance:
+  Enabled: true
+
 Style/SymbolArray:
-  Eanbled: true
+  Enabled: true
   EnforcedStyle: percent
+
+Style/SymbolLiteral:
+  Enabled: true
+
+Style/SymbolProc:
+  Enabled: true
 
 Style/Tab:
   Enabled: true
+
+Style/TernaryParentheses:
+  Enabled: false
 
 Style/TrailingBlankLines:
   Enabled: true
   EnforcedStyle: final_newline
 
-Style/TrailingComma:
+Style/TrailingCommaInArguments:
   Enabled: true
-  EnforcedStyle: consistent_coma
+  EnforcedStyleForMultiline: comma
+
+Style/Style/TrailingCommaInLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingUnderscoreVariable:
+  Enabled: true
+  AllowNamedUnderscoreVariables: true
+
+Style/TrailingUnderscoreVariable:
+  Enabled: false
 
 Style/TrailingWhitespace:
   Enabled: true
 
+Style/TrivialAccessors:
+  Enabled: true
+  # When set to false the cop will suggest the use of accessor methods
+  # in situations like:
+  #
+  # def name
+  #   @other_name
+  # end
+  #
+  # This way you can uncover "hidden" attributes in your code.
+  ExactNameMatch: true
+  AllowPredicates: true
+  # Allows trivial writers that don't end in an equal sign. e.g.
+  #
+  # def on_exception(action)
+  #   @on_exception=action
+  # end
+  # on_exception :restart
+  #
+  # Commonly used in DSLs
+  AllowDSLWriters: false
+  IgnoreClassMethods: false
+  Whitelist:
+    - to_ary
+    - to_a
+    - to_c
+    - to_enum
+    - to_h
+    - to_hash
+    - to_i
+    - to_int
+    - to_io
+    - to_open
+    - to_path
+    - to_proc
+    - to_r
+    - to_regexp
+    - to_str
+    - to_s
+    - to_sym
+
 Style/UnlessElse:
+  Enabled: true
+
+Style/UnneededCapitalW:
+  Enabled: true
+
+Style/UnneededInterpolation:
+  Enabled: true
+
+Style/UnneededPercentQ:
   Enabled: true
 
 Style/VariableInterpolation:
@@ -492,6 +799,13 @@ Style/VariableName:
   Enabled: true
   EnforcedStyle: snake_case
 
+Style/VariableNumber:
+  Enabled: true
+  EnforcedStyle: normalcase
+  Exclude:
+   - 'spec/**/*'
+   - 'vendor/**/*'
+
 Style/WhenThen:
   Enabled: true
 
@@ -499,12 +813,17 @@ Style/WhileUntilDo:
   Enabled: true
 
 Style/WhileUntilModifier:
+  Enabled: true
   MaxLineLength: 120
 
 Style/WordArray:
+  Enabled: true
   EnforcedStyle: percent
   SupportedStyles:
   # The MinSize option causes the WordArray rule to be ignored for arrays
   # smaller than a certain size.  The rule is only applied to arrays
   # whose element count is greater than or equal to MinSize.
   MinSize: 1
+
+Style/ZeroLengthPredicate:
+  Enabled: true
