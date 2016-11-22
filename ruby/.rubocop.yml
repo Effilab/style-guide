@@ -16,64 +16,7 @@ AllCops:
     - '**/vendor/**/*'
 
 # Disable all cops by default
-DisabledByDefault: false
+DisabledByDefault: true
 
 Rails:
   Enabled: true
-
-Style/GuardClause:
-  MinBodyLength: 2
-
-# Though immutable strings are good, we aren't sure we want them by default.
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/AlignParameters:
-  EnforcedStyle: with_fixed_indentation
-
-Style/Lambda:
-  Enabled: false
-
-Style/TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: comma
-
-Metrics/LineLength:
-  Max: 100
-
-Metrics/MethodLength:
-  Max: 15
-
-# This is controversial. Hopefully, we'll be able to agree on it.
-Style/StringLiterals:
-  Enabled: false
-
-Style/MutableConstant:
-  Exclude:
-    - '**/config/initializers/wice_grid_config.rb'
-
-Style/BlockDelimiters:
-  EnforcedStyle: braces_for_chaining
-
-Style/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
-
-Style/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-Style/IfUnlessModifier:
-  Enabled: false
-
-Style/BlockComments:
-  AutoCorrect: false
-
-Rails/FindEach:
-  AutoCorrect: false
-
-Style/AndOr:
-  Enabled: false
-
-Style/Not:
-  Enabled: false
-
-Style/EmptyCaseCondition:
-  Enabled: false
