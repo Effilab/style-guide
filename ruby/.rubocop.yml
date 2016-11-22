@@ -1,11 +1,11 @@
 inherit_from:
-  - .rubocop_bundler.yml
-  - .rubocop_lint.yml
-  - .rubocop_metrics.yml
-  - .rubocop_performance.yml
-  - .rubocop_rails.yml
-  - .rubocop_security.yml
-  - .rubocop_style.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_bundler.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_lint.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_metrics.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_performance.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_rails.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_security.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_style.yml
 
 AllCops:
   TargetRubyVersion: 2.3
