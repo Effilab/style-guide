@@ -2,7 +2,7 @@ Rails/ActionFilter:
   Enabled: true
   EnforcedStyle: action
   Include:
-   - app/controllers/**/*.rb
+   - 'app/controllers/**/*.rb'
 
 Rails/Date:
   Enabled: true
@@ -29,7 +29,7 @@ Rails/FindEach:
 Rails/HasAndBelongsToMany:
   Enabled: true
   Include:
-    - app/models/**/*.rb
+    - 'app/models/**/*.rb'
 
 Rails/HttpPositionalArguments:
   Enabled: true
@@ -39,12 +39,12 @@ Rails/NotNullColumn:
 
 Rails/Output:
   Enabled: true
-   Include:
-   - app/**/*.rb
-   - config/**/*.rb
-   - db/**/*.rb
-   - lib/**/*.rb
-   # blacklist ap ?
+  Include:
+    - 'app/**/*.rb'
+    - 'config/**/*.rb'
+    - 'db/**/*.rb'
+    - 'lib/**/*.rb'
+    # blacklist ap ?
 
 Rails/OutputSafety:
   Enabled: true
@@ -55,7 +55,7 @@ Rails/PluralizationGrammar:
 Rails/ReadWriteAttribute:
   Enabled: true
   Include:
-    - app/models/**/*.rb
+    - 'app/models/**/*.rb'
 
 Rails/RequestReferer:
   Enabled: true
@@ -70,10 +70,10 @@ Rails/SaveBang:
 Rails/ScopeArgs:
   Enabled: true
   Include:
-    - app/models/**/*.rb
+    - 'app/models/**/*.rb'
 
 Rails/TimeZone:
-  Eanbled: true
+  Enabled: true
   EnforcedStyle: strict
 
 Rails/UniqBeforePluck:
@@ -83,4 +83,4 @@ Rails/UniqBeforePluck:
 Rails/Validation:
   Enabled: true
   Include:
-    - app/models/**/*.rb
+    - 'app/models/**/*.rb'

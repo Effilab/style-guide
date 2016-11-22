@@ -15,7 +15,10 @@ Metrics/BlockLength:
   Enabled: true
   CountComments: false
   Max: 25
-  Exclude: Rakefile, **/*.rake, spec/**/*.rb
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
 
 Metrics/BlockNesting:
   Enabled: true

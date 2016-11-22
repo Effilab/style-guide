@@ -81,10 +81,10 @@ Lint/Eval:
   Enabled: true
 
 Lint/FloatOutOfRange:
-  Eanbled: true
+  Enabled: true
 
 Lint/FormatParameterMismatch:
-  Eanbled: true
+  Enabled: true
 
 Lint/HandleExceptions:
   Enabled: true

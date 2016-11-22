@@ -120,12 +120,12 @@ Style/CommandLiteral:
 
 Style/CommentAnnotation:
   Enabled: true
-   Keywords:
-    - TODO
-    - FIXME
-    - OPTIMIZE
-    - HACK
-    - REVIEW
+  Keywords:
+    - 'TODO'
+    - 'FIXME'
+    - 'OPTIMIZE'
+    - 'HACK'
+    - 'REVIEW'
 
 Style/CommentIndentation:
   Enabled: true
@@ -203,9 +203,9 @@ Style/EmptyLinesAroundModuleBody:
 Style/EmptyLiteral:
   Enabled: true
 
-Style/EmptyMethod:
-  Enabled: true
-  EnforcedStyle: loose
+#Style/EmptyMethod:
+#  Enabled: true
+#  EnforcedStyle: loose
 
 Style/Encoding:
   Enabled: false
@@ -349,7 +349,7 @@ Style/LambdaCall:
   EnforcedStyle: call
 
 Style/LeadingCommentSpace:
-  Enbalde: true
+  Enabled: true
 
 Style/LineEndConcatenation:
   Enabled: true
@@ -466,7 +466,8 @@ Style/NumericLiterals:
 Style/NumericPredicate:
   Enabled: true
   EnforcedStyle: predicate
-  Exclude: spec/**/*
+  Exclude: 
+    - 'spec/**/*'
 
 Style/OneLineConditional:
   Enabled: true
@@ -725,7 +726,7 @@ Style/TrailingCommaInArguments:
   Enabled: true
   EnforcedStyleForMultiline: comma
 
-Style/Style/TrailingCommaInLiteral:
+Style/TrailingCommaInLiteral:
   Enabled: true
   EnforcedStyleForMultiline: comma
 
