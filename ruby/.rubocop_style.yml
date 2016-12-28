@@ -18,8 +18,8 @@ Style/AlignArray:
 
 Style/AlignHash:
   # needs autocorrection
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: key
+  EnforcedColonStyle: key
   EnforcedLastArgumentHashStyle: always_inspect
 
 Style/AlignParameters:
