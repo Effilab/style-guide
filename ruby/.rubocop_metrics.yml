@@ -1,0 +1,65 @@
+Metrics/AbcSize:
+  Enabled: true
+  Max: 15
+  # def abc(a, b, c)
+  #   Math.sqrt((a*a)+(b*b)+(c*c))
+  # end
+  #
+  # abc(10, 5, 7) => 13.19090595827292
+  # http://wiki.c2.com/?AbcMetric
+  # Assignment -- an explicit transfer of data into a variable, e.g. = *= /= %= += <<= >>= &= |= ^= >>>= ++ --
+  # Branch -- an explicit forward program branch out of scope -- a function call, class method call, or new operator
+  # Condition -- a logical/Boolean test, == != <= >= < > else case default try catch ? and unary conditionals.
+  #
+Metrics/BlockLength:
+  Enabled: true
+  CountComments: false
+  Max: 25
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+
+Metrics/BlockNesting:
+  Enabled: true
+  Max: 3
+
+Metrics/ClassLength:
+  Enabled: true
+  CountComments: false
+  Max: 200
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 6
+  # This cop checks that the cyclomatic complexity of methods is not higher than the configured maximum.
+  # The cyclomatic complexity is the number of linearly independent paths through a method.
+  # The algorithm counts decision points and adds one.
+  #
+
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes: http, https
+  IgnoreCopDirectives: false
+
+Metrics/MethodLength:
+  Enabled: true
+  CountComments: false
+  Max: 25
+
+Metrics/ModuleLength:
+  Enabled: true
+  CountComments: false
+  Max: 200
+
+Metrics/ParameterLists:
+  Enabled: true
+  Max: 5
+  CountKeywordArgs: true
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 7

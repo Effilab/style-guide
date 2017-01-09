@@ -1,0 +1,78 @@
+Performance/CaseWhenSplat:
+  Enabled: true
+
+Performance/Casecmp:
+  Enabled: true
+  Severity: refactor
+
+Performance/CompareWithBlock:
+  Enabled: true
+
+Performance/Count:
+  Enabled: true
+  Severity: refactor
+
+Performance/Detect:
+  Enabled: true
+  Severity: refactor
+
+Performance/DoubleStartEndWith:
+  Enabled: true
+  Severity: warning
+
+Performance/EndWith:
+  Enabled: true
+  Severity: warning
+
+Performance/FixedSize:
+  Enabled: false
+
+Performance/FlatMap:
+  Reference: 'https://github.com/JuanitoFatas/fast-ruby#enumerablemaparrayflatten-vs-enumerableflat_map-code'
+  Enabled: true
+  EnabledForFlattenWithoutParams: false
+  Severity: refactor
+
+Performance/HashEachMethods:
+  Enabled: true
+  Severity: warning
+
+Performance/LstripRstrip:
+  Enabled: true
+
+Performance/RangeInclude:
+  Enabled: true
+
+Performance/RedundantBlockCall:
+  Enabled: true
+
+Performance/RedundantMatch:
+  Enabled: false
+
+Performance/RedundantMerge:
+  Enabled: true
+  MaxKeyValuePairs: 2
+
+Performance/RedundantSortBy:
+  Enabled: true
+
+# Performance/RegexpMatch:
+#   Enabled: false # Enable after upate to ruby 2.4
+
+Performance/ReverseEach:
+  Enabled: true
+
+Performance/Sample:
+  Enabled: true
+
+Performance/Size:
+  Enabled: true
+
+Performance/StartWith:
+  Enabled: true
+
+Performance/StringReplacement:
+  Enabled: true
+
+Performance/TimesMap:
+  Enabled: true
