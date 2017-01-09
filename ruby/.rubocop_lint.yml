@@ -110,6 +110,9 @@ Lint/LiteralInInterpolation:
 Lint/Loop:
   Enabled: true
 
+# Lint/MultipleCompare:
+#   Enabled: true
+
 Lint/NestedMethodDefinition:
   Enabled: true
 
@@ -136,6 +139,9 @@ Lint/RequireParentheses:
 
 Lint/RescueException:
   Enabled: true
+
+# Lint/SafeNavigationChain:
+#   Enabled: true
 
 Lint/ShadowedException:
   Enabled: true

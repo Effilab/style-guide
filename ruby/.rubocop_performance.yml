@@ -5,6 +5,9 @@ Performance/Casecmp:
   Enabled: true
   Severity: refactor
 
+Performance/CompareWithBlock:
+  Enabled: true
+
 Performance/Count:
   Enabled: true
   Severity: refactor
@@ -53,6 +56,9 @@ Performance/RedundantMerge:
 Performance/RedundantSortBy:
   Enabled: true
 
+# Performance/RegexpMatch:
+#   Enabled: false # Enable after upate to ruby 2.4
+
 Performance/ReverseEach:
   Enabled: true
 
@@ -60,9 +66,6 @@ Performance/Sample:
   Enabled: true
 
 Performance/Size:
-  Enabled: true
-
-Performance/SortWithBlock:
   Enabled: true
 
 Performance/StartWith:

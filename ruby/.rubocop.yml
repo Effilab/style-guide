@@ -1,5 +1,5 @@
 inherit_from:
-  #- https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_bundler.yml
+  - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_bundler.yml
   - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_lint.yml
   - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_metrics.yml
   - https://git.effilab-local.com/world/style-guide/raw/review-rubocop-config/ruby/.rubocop_performance.yml
