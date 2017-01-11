@@ -191,7 +191,7 @@ Style/EmptyLinesAroundBlockBody:
 
 Style/EmptyLinesAroundClassBody:
   Enabled: true
-  EnforcedStyle: empty_lines
+  EnforcedStyle: no_empty_lines
 
 Style/EmptyLinesAroundMethodBody:
   Enabled: true
