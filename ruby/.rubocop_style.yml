@@ -70,7 +70,7 @@ Style/CaseEquality:
 
 Style/CaseIndentation:
   Enabled: true
-  IndentWhenRelativeTo: case
+  EnforcedStyle: case
   IndentOneStep: false
 
 Style/CharacterLiteral:
@@ -203,9 +203,9 @@ Style/EmptyLinesAroundModuleBody:
 Style/EmptyLiteral:
   Enabled: true
 
-#Style/EmptyMethod:
-#  Enabled: true
-#  EnforcedStyle: loose
+Style/EmptyMethod:
+ Enabled: false
+ EnforcedStyle: expanded
 
 Style/Encoding:
   Enabled: false
@@ -354,7 +354,10 @@ Style/LeadingCommentSpace:
 Style/LineEndConcatenation:
   Enabled: true
 
-Style/MethodCallParentheses:
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+
+Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 
 Style/MethodCalledOnDoEndBlock:
@@ -466,7 +469,7 @@ Style/NumericLiterals:
 Style/NumericPredicate:
   Enabled: true
   EnforcedStyle: predicate
-  Exclude: 
+  Exclude:
     - 'spec/**/*'
 
 Style/OneLineConditional:

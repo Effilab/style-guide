@@ -56,8 +56,8 @@ Performance/RedundantMerge:
 Performance/RedundantSortBy:
   Enabled: true
 
-# Performance/RegexpMatch:
-#   Enabled: false # Enable after upate to ruby 2.4
+Performance/RegexpMatch:
+  Enabled: false # Enable after upate to ruby 2.4
 
 Performance/ReverseEach:
   Enabled: true

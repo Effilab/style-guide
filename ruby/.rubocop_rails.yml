@@ -25,8 +25,8 @@ Rails/EnumUniqueness:
 Rails/Exit:
   Enabled: true
 
-# Rails/FilePath:
-#   Enabled: true
+Rails/FilePath:
+  Enabled: true
 
 Rails/FindBy:
   Enabled: true
@@ -69,10 +69,10 @@ Rails/RequestReferer:
   Enabled: true
   EnforcedStyle: referer
 
-# Rails/ReversibleMigration:
-#   Enabled: true
-#   Include:
-#     - 'db/migrate/*.rb'
+Rails/ReversibleMigration:
+  Enabled: false
+  Include:
+    - 'db/migrate/*.rb'
 
 Rails/SafeNavigation:
   Enabled: true
@@ -85,8 +85,8 @@ Rails/ScopeArgs:
   Include:
     - 'app/models/**/*.rb'
 
-# Rails/SkipsModelValidations:
-#   Enabled: true
+Rails/SkipsModelValidations:
+  Enabled: true
 
 Rails/TimeZone:
   Enabled: true
@@ -94,7 +94,7 @@ Rails/TimeZone:
 
 Rails/UniqBeforePluck:
   Enabled: true
-  EnforcedMode: conservative
+  EnforcedStyle: conservative
 
 Rails/Validation:
   Enabled: true
