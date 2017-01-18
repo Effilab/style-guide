@@ -727,7 +727,7 @@ Style/TrailingBlankLines:
 
 Style/TrailingCommaInArguments:
   Enabled: true
-  EnforcedStyleForMultiline: comma
+  EnforcedStyleForMultiline: no_comma
 
 Style/TrailingCommaInLiteral:
   Enabled: true
