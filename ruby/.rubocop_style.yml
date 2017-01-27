@@ -147,7 +147,7 @@ Style/Documentation:
 
 Style/DocumentationMethod:
   Enabled: true
-  RequireForNonPublicMethods: true
+  RequireForNonPublicMethods: false
 
 Style/DotPosition:
   Enabled: true
