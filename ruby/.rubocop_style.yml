@@ -6,7 +6,7 @@ Style/AccessModifierIndentation:
   IndentationWidth: ~
 
 Style/AccessorMethodName:
-  Enabled: true
+  Enabled: false
 
 Style/Alias:
   Enabled: true
@@ -80,7 +80,7 @@ Style/ClassAndModuleCamelCase:
   Enabled: true
 
 Style/ClassAndModuleChildren:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: nested
 
 Style/ClassCheck:
@@ -143,10 +143,10 @@ Style/DefWithParentheses:
   Enabled: true
 
 Style/Documentation:
-  Enabled: true
+  Enabled: false
 
 Style/DocumentationMethod:
-  Enabled: true
+  Enabled: false
   RequireForNonPublicMethods: false
 
 Style/DotPosition:
@@ -272,14 +272,14 @@ Style/FormatString:
 
 Style/FrozenStringLiteralComment:
   Enabled: true
-  EnforcedStyle: always
+  EnforcedStyle: when_needed
 
 Style/GlobalVars:
   Enabled: true
   AllowedVariables: [$quiet, $shutdown]
 
 Style/GuardClause:
-  Enabled: true
+  Enabled: false
   MinBodyLength: 1
 
 Style/HashSyntax:
@@ -324,7 +324,7 @@ Style/IndentHash:
 
 Style/IndentationConsistency:
   Enabled: true
-  EnforcedStyle: rails
+  EnforcedStyle: normal
 
 Style/IndentationWidth:
   Enabled: true
@@ -361,7 +361,7 @@ Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 
 Style/MethodCalledOnDoEndBlock:
-  Enabled: true
+  Enabled: false
 
 Style/MethodDefParentheses:
   Enabled: true
@@ -384,7 +384,7 @@ Style/MultilineArrayBraceLayout:
   EnforcedStyle: symmetrical
 
 Style/MultilineAssignmentLayout:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: new_line
 
 Style/MultilineBlockChain:
@@ -683,7 +683,7 @@ Style/StabbyLambdaParentheses:
   EnforcedStyle: require_parentheses
 
 Style/StringLiterals:
-  Enabled: true
+  Enabled: false
   EnforcedStyle: single_quotes
   ConsistentQuotesInMultiline: false
 
