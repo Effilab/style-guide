@@ -28,7 +28,7 @@ test:
 `RAILS_ENV=test bundle exec rake parallel:create --verbose --trace`
 
 ### Migrate multiple databases
-`RAILS_ENV=test bundle exec rake parallel:migrate --verbose --trace`
+`RAILS_ENV=test bundle exec rake parallel:load_structure --verbose --trace`
 
 > NB: You can specify the number databases with `parallel:XXX[n]`, *n* being the number of processes you want to run
 
