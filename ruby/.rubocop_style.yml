@@ -594,7 +594,8 @@ Style/SingleLineBlockParams:
   Enabled: false
 
 Style/SingleLineMethods:
-  Enabled: false
+  Enabled: true
+  AllowIfMethodIsEmpty: true
 
 Style/SpaceAfterColon:
   Enabled: true
