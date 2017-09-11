@@ -684,7 +684,7 @@ Style/StabbyLambdaParentheses:
   EnforcedStyle: require_parentheses
 
 Style/StringLiterals:
-  Enabled: false
+  Enabled: true
   EnforcedStyle: double_quotes
   ConsistentQuotesInMultiline: false
 
