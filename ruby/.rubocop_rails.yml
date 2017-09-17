@@ -9,7 +9,7 @@ Rails/Date:
   EnforcedStyle: strict
 
 Rails/Delegate:
-  Enabled: true
+  Enabled: false
 
 Rails/DelegateAllowBlank:
   Enabled: true
