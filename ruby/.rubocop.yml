@@ -1,5 +1,6 @@
 inherit_from:
   - https://git.effilab-local.com/world/style-guide/raw/master/ruby/.rubocop_bundler.yml
+  - https://git.effilab-local.com/world/style-guide/raw/master/ruby/.rubocop_layout.yml
   - https://git.effilab-local.com/world/style-guide/raw/master/ruby/.rubocop_lint.yml
   - https://git.effilab-local.com/world/style-guide/raw/master/ruby/.rubocop_metrics.yml
   - https://git.effilab-local.com/world/style-guide/raw/master/ruby/.rubocop_performance.yml
