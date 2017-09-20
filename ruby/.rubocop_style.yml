@@ -1,30 +1,9 @@
-Style/AccessModifierIndentation:
-  Enabled: true
-  EnforcedStyle: indent
-  # By default, the indentation width from Style/IndentationWidth is used
-  # But it can be overridden by setting this parameter
-  IndentationWidth: ~
-
 Style/AccessorMethodName:
   Enabled: false
 
 Style/Alias:
   Enabled: true
   EnforcedStyle: prefer_alias_method
-
-Style/AlignArray:
-  # needs autocorrection
-  Enabled: true
-
-Style/AlignHash:
-  # needs autocorrection
-  EnforcedHashRocketStyle: key
-  EnforcedColonStyle: key
-  EnforcedLastArgumentHashStyle: always_inspect
-
-Style/AlignParameters:
-  Enabled: true
-  EnforcedStyle: with_first_parameter
 
 Style/AndOr:
   Enabled: true
@@ -58,20 +37,12 @@ Style/BlockDelimiters:
   Enabled: true
   EnforcedStyle: braces_for_chaining
 
-Style/BlockEndNewline:
-  Enabled: true
-
 Style/BracesAroundHashParameters:
   Enabled: true
   EnforcedStyle: context_dependent
 
 Style/CaseEquality:
   Enabled: false
-
-Style/CaseIndentation:
-  Enabled: true
-  EnforcedStyle: case
-  IndentOneStep: false
 
 Style/CharacterLiteral:
   Enabled: true
@@ -90,9 +61,6 @@ Style/ClassMethods:
   Enabled: true
 
 Style/ClassVars:
-  Enabled: true
-
-Style/ClosingParenthesisIndentation:
   Enabled: true
 
 Style/CollectionMethods:
@@ -127,9 +95,6 @@ Style/CommentAnnotation:
     - 'HACK'
     - 'REVIEW'
 
-Style/CommentIndentation:
-  Enabled: true
-
 Style/ConditionalAssignment:
   Enabled: false
 
@@ -149,10 +114,6 @@ Style/DocumentationMethod:
   Enabled: false
   RequireForNonPublicMethods: false
 
-Style/DotPosition:
-  Enabled: true
-  EnforcedStyle: leading
-
 Style/DoubleNegation:
   Enabled: true
 
@@ -162,43 +123,12 @@ Style/EachForSimpleLoop:
 Style/EachWithObject:
   Enabled: true
 
-Style/ElseAlignment:
-  Enabled: true
-
 Style/EmptyCaseCondition:
   Enabled: true
 
 Style/EmptyElse:
   Enabled: true
   EnforcedStyle:	both
-
-Style/EmptyLineBetweenDefs:
-  Enabled: true
-  # If true, this parameter means that single line method definitions don't
-  # need an empty line between them.
-  AllowAdjacentOneLineDefs: false
-
-Style/EmptyLines:
-  # 2 lines offset
-  Enabled: true
-
-Style/EmptyLinesAroundAccessModifier:
-  Enabled: true
-
-Style/EmptyLinesAroundBlockBody:
-  Enabled: true
-  EnforcedStyle: no_empty_lines
-
-Style/EmptyLinesAroundClassBody:
-  Enabled: true
-  EnforcedStyle: no_empty_lines
-
-Style/EmptyLinesAroundMethodBody:
-  Enabled: true
-
-Style/EmptyLinesAroundModuleBody:
-  Enabled: true
-  EnforcedStyle: no_empty_lines
 
 Style/EmptyLiteral:
   Enabled: true
@@ -213,16 +143,8 @@ Style/Encoding:
 Style/EndBlock:
   Enabled: true
 
-Style/EndOfLine:
-  Enabled: true
-
 Style/EvenOdd:
   Enabled: true
-
-Style/ExtraSpacing:
-  Enabled: true
-  AllowForAlignment: true
-  ForceEqualSignAlignment: false
 
 Style/FileName:
   Enabled: true
@@ -243,21 +165,6 @@ Style/FileName:
   # report offending filenames for executable scripts (i.e. source
   # files with a shebang in the first line).
   IgnoreExecutableScripts: true
-
-Style/FirstArrayElementLineBreak:
-  Enabled: false
-
-Style/FirstHashElementLineBreak:
-  Enabled: false
-
-Style/FirstMethodArgumentLineBreak:
-  Enabled: false
-
-Style/FirstMethodParameterLineBreak:
-  Enabled: false
-
-Style/FirstParameterIndentation:
-  Enabled: false
 
 Style/FlipFlop:
   Enabled: true
@@ -309,32 +216,7 @@ Style/IfWithSemicolon:
 Style/ImplicitRuntimeError:
   Enabled: true
 
-Style/IndentArray:
-  Enabled: true
-  EnforcedStyle: special_inside_parentheses
-  IndentationWidth: ~
-
-Style/IndentAssignment:
-  Enabled: false
-
-Style/IndentHash:
-  Enabled: true
-  EnforcedStyle: special_inside_parentheses
-  IndentationWidth: ~
-
-Style/IndentationConsistency:
-  Enabled: true
-  EnforcedStyle: normal
-
-Style/IndentationWidth:
-  Enabled: true
-  # Number of spaces for each indentation level
-  Width: 2
-
 Style/InfiniteLoop:
-  Enabled: true
-
-Style/InitialIndentation:
   Enabled: true
 
 Style/InlineComment:
@@ -347,9 +229,6 @@ Style/Lambda:
 Style/LambdaCall:
   Enabled: true
   EnforcedStyle: call
-
-Style/LeadingCommentSpace:
-  Enabled: true
 
 Style/LineEndConcatenation:
   Enabled: true
@@ -379,23 +258,8 @@ Style/MissingElse:
 Style/ModuleFunction:
   Enabled: true
 
-Style/MultilineArrayBraceLayout:
-  Enabled: true
-  EnforcedStyle: symmetrical
-
-Style/MultilineAssignmentLayout:
-  Enabled: false
-  EnforcedStyle: new_line
-
 Style/MultilineBlockChain:
   Enabled: true
-
-Style/MultilineBlockLayout:
-  Enabled: true
-
-Style/MultilineHashBraceLayout:
-  Enabled: true
-  EnforcedStyle: symmetrical
 
 Style/MultilineIfModifier:
   Enabled: true
@@ -405,22 +269,6 @@ Style/MultilineIfThen:
 
 Style/MultilineMemoization:
   Enabled: false
-
-Style/MultilineMethodCallBraceLayout:
-  Enabled: true
-  EnforcedStyle: symmetrical
-
-Style/MultilineMethodCallIndentation:
-  Enabled: true
-  EnforcedStyle: aligned
-
-Style/MultilineMethodDefinitionBraceLayout:
-  Enabled: true
-  EnforcedStyle: symmetrical
-
-Style/MultilineOperationIndentation:
-  Enabled: true
-  EnforcedStyle: aligned
 
 Style/MultilineTernaryOperator:
   Enabled: true
@@ -565,9 +413,6 @@ Style/RedundantSelf:
 Style/RegexpLiteral:
   Enabled: false
 
-Style/RescueEnsureAlignment:
-  Enabled: true
-
 Style/RescueModifier:
   Enabled: true
 
@@ -596,84 +441,6 @@ Style/SingleLineBlockParams:
 Style/SingleLineMethods:
   Enabled: true
   AllowIfMethodIsEmpty: true
-
-Style/SpaceAfterColon:
-  Enabled: true
-
-Style/SpaceAfterComma:
-  Enabled: true
-
-Style/SpaceAfterMethodName:
-  Enabled: true
-
-Style/SpaceAfterNot:
-  Enabled: true
-
-Style/SpaceAfterSemicolon:
-  Enabled: true
-
-Style/SpaceAroundBlockParameters:
-  Enabled: true
-
-Style/SpaceAroundEqualsInParameterDefault:
-  Enabled: true
-
-Style/SpaceAroundKeyword:
-  Enabled: true
-
-Style/SpaceAroundOperators:
-  Enabled: true
-  # When true, allows most uses of extra spacing if the intent is to align
-  # with an operator on the previous or next line, not counting empty lines
-  # or comment lines.
-  AllowForAlignment: true
-
-Style/SpaceBeforeBlockBraces:
-  Enabled: true
-
-Style/SpaceBeforeComma:
-  Enabled: true
-
-Style/SpaceBeforeComment:
-  Enabled: true
-
-Style/SpaceBeforeFirstArg:
-  Enabled: true
-  AllowForAlignment: true
-
-Style/SpaceBeforeSemicolon:
-  Enabled: true
-
-Style/SpaceInLambdaLiteral:
-  Enabled: true
-  EnforcedStyle: require_no_space
-
-Style/SpaceInsideArrayPercentLiteral:
-  Enabled: true
-
-Style/SpaceInsideBlockBraces:
-  Enabled: true
-
-Style/SpaceInsideBrackets:
-  Enabled: true
-
-Style/SpaceInsideHashLiteralBraces:
-  Enabled: true
-  EnforcedStyle: space
-  EnforcedStyleForEmptyBraces: no_space
-
-Style/SpaceInsideParens:
-  Enabled: true
-
-Style/SpaceInsidePercentLiteralDelimiters:
-  Enabled: true
-
-Style/SpaceInsideRangeLiteral:
-  Enabled: true
-
-Style/SpaceInsideStringInterpolation:
-  Enabled: true
-  EnforcedStyle: no_space
 
 Style/SpecialGlobalVars:
   Enabled: true
@@ -716,15 +483,8 @@ Style/SymbolLiteral:
 Style/SymbolProc:
   Enabled: true
 
-Style/Tab:
-  Enabled: true
-
 Style/TernaryParentheses:
   Enabled: false
-
-Style/TrailingBlankLines:
-  Enabled: true
-  EnforcedStyle: final_newline
 
 Style/TrailingCommaInArguments:
   Enabled: true
@@ -740,9 +500,6 @@ Style/TrailingUnderscoreVariable:
 
 Style/TrailingUnderscoreVariable:
   Enabled: false
-
-Style/TrailingWhitespace:
-  Enabled: true
 
 Style/TrivialAccessors:
   Enabled: true
