@@ -1,0 +1,68 @@
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/AsciiIdentifiers:
+  Enabled: true
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+Naming/ConstantName:
+  Enabled: true
+
+Naming/FileName:
+  Enabled: true
+  # File names listed in AllCops:Include are excluded by default. Add extra
+  # excludes here.
+  Exclude: []
+  # When true, requires that each source file should define a class or module
+  # with a name which matches the file name (converted to ... case).
+  # It further expects it to be nested inside modules which match the names
+  # of subdirectories in its path.
+  ExpectMatchingDefinition: false
+  # If non-nil, expect all source file names to match the following regex.
+  # Only the file name itself is matched, not the entire file path.
+  # Use anchors as necessary if you want to match the entire name rather than
+  # just a part of it.
+  Regex: ~
+  # With `IgnoreExecutableScripts` set to `true`, this cop does not
+  # report offending filenames for executable scripts (i.e. source
+  # files with a shebang in the first line).
+  IgnoreExecutableScripts: true
+
+Naming/MethodName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Naming/PredicateName:
+  Enabled: true
+  # Predicate name prefixes.
+  NamePrefix:
+    - is_
+    - has_
+    - have_
+  # Predicate name prefixes that should be removed.
+  NamePrefixBlacklist:
+    - is_
+    - has_
+    - have_
+  # Predicate names which, despite having a blacklisted prefix, or no ?,
+  # should still be accepted
+  NameWhitelist:
+    - is_a?
+  # Exclude Rspec specs because there is a strong convetion to write spec
+  # helpers in the form of `have_something` or `be_something`.
+  Exclude:
+    - 'spec/**/*'
+
+Naming/VariableName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: normalcase
+  Exclude:
+   - 'spec/**/*'
+   - 'vendor/**/*'
+
