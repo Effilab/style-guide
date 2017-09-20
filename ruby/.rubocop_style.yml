@@ -287,9 +287,6 @@ Style/NumericPredicate:
 Style/OneLineConditional:
   Enabled: true
 
-Style/OpMethod:
-  Enabled: true
-
 Style/OptionHash:
   Enabled: false
 

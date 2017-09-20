@@ -4,6 +4,9 @@ Naming/AccessorMethodName:
 Naming/AsciiIdentifiers:
   Enabled: true
 
+Naming/BinaryOperatorParameter:
+  Enabled: true
+
 Naming/ClassAndModuleCamelCase:
   Enabled: true
 
