@@ -510,7 +510,6 @@ Style/WhileUntilModifier:
 Style/WordArray:
   Enabled: true
   EnforcedStyle: percent
-  SupportedStyles:
   # The MinSize option causes the WordArray rule to be ignored for arrays
   # smaller than a certain size.  The rule is only applied to arrays
   # whose element count is greater than or equal to MinSize.
