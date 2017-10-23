@@ -22,7 +22,7 @@
 6. Reviewer resolves discussions
 6. Reviewer sets MR assignee to the developer
 7. Reviewer adds a comment on Jira ticket, eg. `Code review OK`
-8. Reviewer sets Jira ticket to `To Do`
+7. Reviewer sets Jira ticket to `To Do`
 8. Review is over, the developer prepares QA and ticket workflow continues
 
 ## Do
