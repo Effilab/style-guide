@@ -12,23 +12,24 @@
 
 ### Review worflow:
 1. Reviewer adds comment on the MR
-2. Reviewer set MR assignee to the developer
-3. Reviewer set Jira ticket to `Todo`
+2. Reviewer sets MR assignee to the developer
+3. Reviewer sets Jira ticket to `Todo`
 4. Developer handles remarks / makes changes / responds to discussion
-5. Developer set MR assignee to the reviewer
-5. Developer set Jira ticket to `Ready code review`
+5. Developer sets MR assignee to the reviewer
+5. Developer sets Jira ticket to `Ready code review`
 5.a If needed go back to 1.
 5.b If review is satisfying continue
 6. Reviewer resolves discussions
-6. Reviewer set MR assignee to the developer
-7. Reviewer add a comment on Jira ticket, eg. `Code review OK`
+6. Reviewer sets MR assignee to the developer
+7. Reviewer adds a comment on Jira ticket, eg. `Code review OK`
+8. Reviewer sets Jira ticket to `To Do`
 8. Review is over, the developer prepares QA and ticket workflow continues
 
 ## Do
 - Apply Rubocop recommendation before code review unless you have a good reason not to do so[1]
 - When developer and reviewer can't aggree on a discussion within a reasonable time/exchanges, ask the Lead Developer to settle
 - The reviewer must resolve discussion once changes are done and validated
-- Be gentle with developer, not with code 
+- Be gentle with developer, not with code
 - Qualify the level of need of your remarks using corresponding emoji (emojis TBD)
 - If some exchanges are done orally, please write a summary of the decisions on the MR
 
