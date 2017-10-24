@@ -95,10 +95,7 @@ Lint/IneffectiveAccessModifier:
 Lint/InheritException:
   Enabled: true
 
-Lint/InvalidCharacterLiteral:
-  Enabled: false
-
-Lint/LiteralInCondition:
+Lint/LiteralAsCondition:
   Enabled: true
 
 Lint/LiteralInInterpolation:
