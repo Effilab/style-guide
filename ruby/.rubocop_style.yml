@@ -73,7 +73,12 @@ Style/ParenthesesAroundCondition:
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
-    default: '()'
+    default: ()
+    '%i': ()
+    '%I': ()
+    '%r': ()
+    '%w': ()
+    '%W': ()
 
 Style/RegexpLiteral:
   Enabled: false
