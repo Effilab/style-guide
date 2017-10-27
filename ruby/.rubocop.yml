@@ -12,6 +12,7 @@ inherit_from:
 
 AllCops:
   TargetRubyVersion: 2.3
+  TargetRailsVersion: 4.2
   DisplayCopNames: true
   Exclude:
     - '**/db/**/*'
