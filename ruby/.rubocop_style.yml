@@ -54,7 +54,7 @@ Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
 
 Style/IfUnlessModifier:
-  MaxLineLength: 120
+  Enabled: true
 
 Style/IfWithSemicolon:
   Enabled: false
@@ -99,7 +99,7 @@ Style/TrailingUnderscoreVariable:
   Enabled: false
 
 Style/WhileUntilModifier:
-  MaxLineLength: 120
+  Enabled: true
 
 Style/WordArray:
   # The MinSize option causes the WordArray rule to be ignored for arrays
