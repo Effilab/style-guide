@@ -9,6 +9,7 @@
 1. Open a new MR on gitlab (cf. _Q&A -> How to open a Merge Request ?_ for more details)
 2. Add a comment to the Jira ticket with the MR's URL
 3. Move the ticket to `Ready code review`
+4. Assign the MR to the code reviewer in Gitlab
 
 ### Review worflow:
 1. Reviewer adds comment on the MR
