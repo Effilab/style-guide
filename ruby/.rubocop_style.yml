@@ -92,7 +92,10 @@ Style/StringLiteralsInInterpolation:
 Style/TernaryParentheses:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
 Style/TrailingUnderscoreVariable:
