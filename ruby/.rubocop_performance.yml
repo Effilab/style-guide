@@ -19,9 +19,6 @@ Performance/FixedSize:
 Performance/FlatMap:
   Severity: refactor
 
-Performance/HashEachMethods:
-  Severity: warning
-
 Performance/RedundantMatch:
   Enabled: false
 
