@@ -114,3 +114,7 @@ Rails/Delegate:
   Enabled: false
 Rails/FilePath:
   Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/HasAndBelongsToMany:
+  Enabled: false
