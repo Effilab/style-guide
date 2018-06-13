@@ -4,6 +4,13 @@
 ### Prerequisites:
 - Developer works on a Jira ticket. Ticket is marked as `In progress`
 - The code reviewer field must be defined on ticket
+- Code must be tested, and as a general principle, **there won't be code reviews of untested code**.
+   Now, there might be a few reasons why a MR doesn't include tests.
+   1. Technical complexity. Now, that's a good opportunity to reflect on alternative implementations:
+      is there another way to implement the feature that could simplify tests writing ? It's not always
+      possible in a timely fashion, but it's worth thinking about that, be it only for the next feature.
+   2. Deadline pressure. A dedicated task should then be planned to fix the weakness introduced in the test suite.
+   3. Lazyness. This "reason" is never OK, and will be rejected.
 
 ### Once ready for code review, open the MR:
 1. Open a new MR on gitlab (cf. _Q&A -> How to open a Merge Request ?_ for more details)
