@@ -17,7 +17,7 @@ Performance/TimesMap :
   Enabled: false
 
 Style/AutoResourceCleanup:
-  Enable: true
+  Enabled: true
 Style/Alias:
   Enabled: false
 Style/AsciiComments:
