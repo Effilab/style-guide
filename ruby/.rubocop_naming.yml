@@ -1,6 +1,0 @@
-Naming/AccessorMethodName:
-  Enabled: false
-
-Naming/VariableNumber:
-  Exclude:
-   - 'spec/**/*'
