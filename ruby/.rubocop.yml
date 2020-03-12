@@ -24,8 +24,6 @@ Style/AsciiComments:
   Enabled: false
 Style/BarePercentLiterals:
   Enabled: false
-Style/BracesAroundHashParameters:
-  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/ClassCheck:
