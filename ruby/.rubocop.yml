@@ -96,6 +96,12 @@ Style/TrailingUnderscoreVariable:
   Enabled: false
 Style/WordArray:
   Enabled: false
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
 
 Layout/LineLength:
   Max: 120
