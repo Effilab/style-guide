@@ -97,7 +97,7 @@ Style/TrailingUnderscoreVariable:
 Style/WordArray:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
   Max: 25
