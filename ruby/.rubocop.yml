@@ -24,8 +24,6 @@ Style/AsciiComments:
   Enabled: false
 Style/BarePercentLiterals:
   Enabled: false
-Style/BracesAroundHashParameters:
-  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/ClassCheck:
@@ -98,8 +96,14 @@ Style/TrailingUnderscoreVariable:
   Enabled: false
 Style/WordArray:
   Enabled: false
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
   Max: 25
