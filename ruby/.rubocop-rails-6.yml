@@ -1,0 +1,122 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.3
+  TargetRailsVersion: 4.2
+  DisplayCopNames: true
+  Exclude:
+    - '**/db/**/*'
+    - '**/marx/**/*'
+    - '**/vendor/**/*'
+
+Performance/Caller:
+  Enabled: false
+Performance/TimesMap :
+  Enabled: false
+
+Style/AutoResourceCleanup:
+  Enabled: true
+Style/Alias:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+Style/BarePercentLiterals:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/ClassCheck:
+  Enabled: false
+Style/CommandLiteral:
+  Enabled: false
+Style/CommentAnnotation:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/EmptyCaseCondition:
+  Enabled: false
+Style/EvalWithLocation:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IfInsideElse:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/MethodMissingSuper:
+  Enabled: false
+Style/MinMax:
+  Enabled: false
+Style/ModuleFunction:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Style/NegatedIf:
+  Enabled: false
+Style/NegatedWhile:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/ParallelAssignment:
+  Enabled: false
+Style/ParenthesesAroundCondition:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/PercentQLiterals:
+  Enabled: false
+Style/Proc:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/TrailingUnderscoreVariable:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 25
+Metrics/ModuleLength:
+  Max: 200
+Metrics/ClassLength:
+  Max: 200
+Metrics/BlockLength:
+  Max: 40
+  ExcludedMethods:
+    - 'included'
+
+Rails:
+  Enabled: true
+Rails/Delegate:
+  Enabled: false
+Rails/FilePath:
+  Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/HasAndBelongsToMany:
+  Enabled: false
