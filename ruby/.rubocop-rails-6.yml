@@ -3,8 +3,8 @@ require:
   - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.3
-  TargetRailsVersion: 4.2
+  TargetRubyVersion: 2.6.5
+  TargetRailsVersion: 6.0
   DisplayCopNames: true
   Exclude:
     - '**/db/**/*'
